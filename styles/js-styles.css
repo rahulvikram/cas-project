@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --sub-color: rgb(9, 42, 65);
+    --main-color: rgb(8, 37, 56);
+}
+
+.js-op {
+    color:rgb(167, 106, 207);
+}
+
+.js-var {
+    color:rgb(252, 183, 56);
+}
+
+.js-str {
+    color:rgb(77, 223, 108);
+}
+
+.js-func {
+    color: rgb(54, 233, 194)
+}
+
+.js-num {
+    color:rgb(252, 134, 56);
+}

@@ -1,0 +1,351 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --sub-color: rgb(9, 42, 65);
+  --main-color: rgb(8, 37, 56);
+}
+
+body {
+  margin: 0px;
+  background-color: rgb(0, 0, 0);
+  min-height: 100%;
+}
+
+.header-bar {
+  background-color: var(--sub-color);
+  display: flex;
+  position: fixed;
+  right: 0px;
+  left: 0px;
+  gap: 45px;
+  align-items: center;
+  justify-content: space-between;
+  padding: -1% -1% 1% -1%;
+  padding: 30px 20%;
+  height: 12px !important;
+  color: white;
+  padding-top:25px !important;
+  padding-bottom:25px !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#title {
+  margin: 0;
+}
+
+hr {
+  margin: 6px 0px;
+  background-color: rgb(255, 255, 255);
+}
+
+ul.topnav {
+  display: flex;
+  gap: 45px;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 4px;
+}
+
+.topnav li::after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px #ffffff;
+  transform: scaleX(0);
+  transition: transform 200ms ease-in-out;
+}
+
+.topnav li:hover::after {
+  transform: scaleX(1);
+}
+
+.topnav2 {
+  display: flex;
+  gap: 45px;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 4px;
+}
+
+.topnav2 li {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navitem2::after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px #ffffff !important;
+  transform: scaleX(0);
+  transition: transform 200ms ease-in-out;
+}
+
+.navitem2:hover::after {
+  transform: scaleX(1);
+}
+
+.navitem2::after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #ffffff;
+  transform: scaleX(0);
+  transition: transform 200ms ease-in-out;
+}
+
+.topnav2 li ul {
+  display: none;
+  padding: 13px 15px;
+  position: absolute;
+  border-top: 3px solid #092e47;
+  border-bottom: 3px solid #092e47;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-top: 10px;
+  animation: fadein 0.2s !important;
+  transition: all 0.2s ease;
+  width: 200px;
+  background-color: #051f30;
+}
+
+.topnav2 li:hover ul {
+  display: block;
+}
+
+.topnav2 li:focus ul {
+  display: block;   
+}
+
+.topnav2 li ul li {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: 180px;
+}
+
+.topnav2 li ul li a{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(212, 212, 212);
+  padding-right: 100;
+  transition: all 0.06s ease;
+}
+
+.topnav2 li ul li a:hover{
+  color: white;
+}
+
+.topnav2 ul {
+  list-style: none;
+}
+
+.navitem a{
+    text-decoration: none;
+    color: white;
+}
+
+.navitem2 a{
+    text-decoration: none;
+    color: white;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: white;
+}
+
+#searchbar {
+  background-color: rgb(14, 56, 83);
+  border: none;
+  border-radius: 7px;
+  color: white;
+  height: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.subheader-bar {
+  background-color: var(--main-color);
+  display: flex;
+  position: fixed;
+  right: 0px;
+  left: 0px;
+  top: 50px;
+  gap: 45px;
+  align-items: center;
+  justify-content: space-between;
+  padding: -1% -1% 1% -1%;
+  padding: 30px 20%;
+  height: 36px !important;
+  color: white;
+  padding-top:50px !important;
+  padding-bottom:50px !important;
+  font-family: 'Montserrat', sans-serif;
+}
+.subheader-bar h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  padding-top: 9px;
+  color: white;
+}
+
+#title {
+  margin: 0;
+}
+
+#title {
+  margin: 0;
+}
+
+.footer-bar {
+  background-color: var(--main-color);
+  display: flex;
+  right: 0;
+  left: 0;
+  bottom: 101px;
+  gap: 45px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20%;
+  height: 12px !important;
+  color: white;
+  padding-top:160px !important;
+  padding-bottom:160px !important;
+  font-family: 'Montserrat', sans-serif;
+}
+.footercol{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footercol h4{
+  font-weight: 500;
+  font-size: 18px;
+}
+#section5 h4{
+  margin-bottom: 0px;
+}
+.footeritem {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+}
+.footeritem:hover {
+  color: white;
+}
+.contactbar {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 7px;
+  color: rgb(0, 0, 0);
+  height: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  width: 300px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.contactbar::placeholder {
+  color: black;
+}
+.contactbar:focus::placeholder {
+  color: transparent;
+}
+.contactform{
+  display: flex;
+  flex-direction: column;
+}
+#contactsubmit{
+  background-color: #ff4b37 !important;
+  color: white !important;
+}
+#contactsubmit:hover{
+  background-color: #db3d2b !important;
+}
+
+.subfooter-bar {
+  background-color: var(--sub-color);
+  padding-top: 40px;
+  padding-bottom: 34px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.subfooter-bar h5 {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 100px;
+}
+
+.sect-1 {
+  height: 900px;
+  display: flex;
+  padding-top: 135px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.58) 0%,rgba(0,0,0,0.66) 100%), url("../../img/img3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sect-1 h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: white;
+}
+.sect-1 p {
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+  width:45%;
+  text-align: center;
+  line-height:35px;
+}
+
+#randompagebtn{
+  border: 1px solid rgb(255, 255, 255);
+  font-size: 24px;
+  color: white;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 9px;
+  transition: all 0.27s ease;
+}
+#randompagebtn:hover{
+  background-color: white;
+  color: black;
+  transform: scale(1.06);
+}
+
+.downarrow {
+  height: 18px;
+  padding-left: 4px;
+  transform: rotate(-90deg);
+  transition: all 0.21s ease;
+}
+
+.navitem2:hover img{
+  transform: rotate(0deg);
+}
