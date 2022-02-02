@@ -192,6 +192,7 @@ input::placeholder {
   padding-top:50px !important;
   padding-bottom:50px !important;
   font-family: 'Montserrat', sans-serif;
+  transition: top 0.39s; /* Transition effect when sliding down (and up) */
 }
 .subheader-bar h1{
   font-family: 'Montserrat', sans-serif;
@@ -296,47 +297,6 @@ input::placeholder {
   padding-left: 100px;
 }
 
-.main-content{
-  height: 900px;
-  padding-top: 170px;
-  margin: auto;
-  width: 1000px;
-}
-
-.main-content h2{
-  font-weight: 700;
-  font-size: 42px;
-}
-
-.main-content h6{
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
-  font-size: 18px;
-  color: rgb(139, 139, 139);
-}
-
-.main-content p{
-  font-weight: 400;
-  font-size: 21px;
-  color: rgb(104, 104, 104)
-}
-
-.codepen {
-  background-color: rgb(26, 26, 26);
-  color: white;
-  border-radius: 16px;
-}
-
-#codepen-1 pre{
-  font-size: 18px;
-  padding: 16px;
-}
-
-#img-1 {
-  max-width: 1000px;
-  border-radius: 16px;
-  margin-bottom: 24px;
-}
 .downarrow {
   height: 18px;
   padding-left: 4px;
@@ -346,4 +306,14 @@ input::placeholder {
 
 .navitem2:hover img{
   transform: rotate(0deg);
+}
+
+#img-1 {
+  max-width: 1000px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+.main-content {
+  height: 2250px;
 }

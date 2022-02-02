@@ -1,0 +1,60 @@
+.main-content{
+    padding-top: 170px;
+    margin: auto;
+    width: 1000px;
+    line-height: 30px;
+  }
+
+  .main-content h2{
+    font-weight: 700;
+    font-size: 42px;
+  }
+
+  .main-content h3{
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .main-content h6{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: rgb(139, 139, 139);
+  }
+
+  .main-content p{
+    font-weight: 400;
+    font-size: 21px;
+    color: rgb(78, 78, 78);
+  }
+
+  .main-content ul{
+    font-weight: 400;
+    font-size: 21px;
+    color: rgb(78, 78, 78);
+  }
+
+  .main-content a{
+    color: rgb(0, 147, 233);
+    background-color: rgb(210, 228, 238);
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 0px 4px;
+    border-bottom: 2px solid rgb(0, 147, 233);
+    transition: 75ms ease-in-out;
+  }
+  .main-content a:hover{
+    background-color: rgb(184, 217, 235);
+    color: rgb(0, 129, 204);
+  }
+
+  .codepen {
+    background-color: rgb(26, 26, 26);
+    color: white;
+    border-radius: 16px;
+  }
+
+  #codepen-1 pre{
+    font-size: 18px;
+    padding: 16px;
+  }
