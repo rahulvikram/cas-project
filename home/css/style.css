@@ -106,7 +106,7 @@ ul.topnav {
   font-size: 14px;
   margin-top: 10px;
   animation: fadein 0.2s !important;
-  transition: all 0.2s ease;
+  transition: all 0.9s ease;
   width: 200px;
   background-color: #051f30;
 }
@@ -116,7 +116,7 @@ ul.topnav {
 }
 
 .topnav2 li:focus ul {
-  display: block;   
+  display: block;
 }
 
 .topnav2 li ul li {
@@ -192,7 +192,9 @@ input::placeholder {
   padding-top:50px !important;
   padding-bottom:50px !important;
   font-family: 'Montserrat', sans-serif;
+  transition: top 0.39s; /* Transition effect when sliding down (and up) */
 }
+
 .subheader-bar h1{
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
@@ -348,4 +350,13 @@ input::placeholder {
 
 .navitem2:hover img{
   transform: rotate(0deg);
+}
+
+.title {
+  display: flex;
+  gap: 10px;
+}
+.title img{
+  height: 52px;
+  align-self: center;
 }

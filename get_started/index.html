@@ -9,59 +9,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="../img/white.png" />
-    <link href="../global-func/js-styles.css" rel="stylesheet" type="text/css" />
-    <link href="../global-func/article-style.css" rel="stylesheet" type="text/css" />
+    <link href="../global-func/js-styles.css" rel="stylesheet" />
+    <link href="../global-func/article-style.css" rel="stylesheet" />
     <script src="../global-func/hide-navbar.js" async defer></script>
+    <script src="script.js" async defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
   </head>
   <body>
-    <div class="header-bar" id="navbar1">
-      <ul class="topnav">
-        <li id="head1" class="navitem"><a href="../home/index.html">Home</a></li>
-        <li id="head2" class="navitem"><a href="#">About This Site</a></li>
-        <li id="head3" class="navitem"><a href="#">About Me</a></li>
-      </ul>
-      <input id="searchbar" type="text"  placeholder="Search... (broken)">
-    </div>
-    <div class="subheader-bar" id="navbar2">
-      <h1>Coding Database</h1>
-      <ul class="topnav2">
-          <li id="head1" class="navitem2"><a href="#">Python</a><a href="#"><img class="downarrow" src="../img/down.png"></a>
-            <ul>
-              <li><a href="#">Get Started</a></li><hr>
-              <li><a href="#">Web Applications</a></li><hr>
-              <li><a href="#">Data Science</a></li><hr>
-              <li><a href="#">Machine Learning</a></li><hr>
-              <li><a href="#">Important Libraries</a></li><hr>
-              <li><a href="#">Courses + Certifications</a></li><hr>
-              <li><a href="#">Project Ideas</a></li>
-            </ul>
-          </li>
-          <li id="head2" class="navitem2"><a href="#">Web Development</a><a href="#"><img class="downarrow" src=" ../img/down.png"></a>
-            <ul>
-              <li><a href="#">Get Started</a></li><hr>
-              <li><a href="#">HTML</a></li><hr>
-              <li><a href="#">CSS</a></li><hr>
-              <li><a href="#">CSS Libraries</a></li><hr>
-              <li><a href="#">Project Ideas</a></li><hr>
-            </ul>
-          </li>
-          <li id="head3" class="navitem2"><a href="#">Javascript</a><a href="#"><img class="downarrow" src=" ../img/down.png"></a>
-            <ul>
-              <li><a href="#">Get Started</a></li><hr>
-              <li><a href="#">Node.js</a></li><hr>
-              <li><a href="#">Useful Libraries</a></li><hr>
-              <li><a href="#">Online Courses</a></li><hr>
-              <li><a href="#">Project Ideas</a></li><hr>
-            </ul>
-          </li>
-          <li id="head4" class="navitem2"><a href="#">Other</a><a href="#"><img class="downarrow" src=" ../img/down.png"></a>
-            <ul>
-              <li><a href="#">Networking & IT</a></li><hr>
-              <li><a href="#">Cool Diagrams</a></li><hr>
-            </ul>
-          </li>
-      </ul>
-    </div>
+    <div id="header"></div>
 
     <div class="main-content">
       <h2>Getting Started With Coding!</h2>
@@ -125,46 +84,6 @@
       </p>
     </div>
 
-    <div class="footer-bar">
-      <div class="footercol" id="section1">
-        <h4>General Info</h4>
-        <a class="footeritem" href="#">Home</a>
-        <a class="footeritem" href="#">About This Site</a>
-        <a class="footeritem" href="#">About Me</a>
-        <a class="footeritem" href="#">Topics</a>
-      </div>
-      <div class="footercol" id="section2">
-        <h4>Topic 1</h4>
-        <a class="footeritem" href="#">Home</a>
-        <a class="footeritem" href="#">About This Site</a>
-        <a class="footeritem" href="#">About Me</a>
-        <a class="footeritem" href="#">Topics</a>
-      </div>
-      <div class="footercol" id="section3">
-        <h4>Topic 2</h4>
-        <a class="footeritem" href="#">Home</a>
-        <a class="footeritem" href="#">About This Site</a>
-        <a class="footeritem" href="#">About Me</a>
-        <a class="footeritem" href="#">Topics</a>
-      </div>
-      <div class="footercol" id="section4">
-        <h4>Topic 3</h4>
-        <a class="footeritem" href="#">Home</a>
-        <a class="footeritem" href="#">About This Site</a>
-        <a class="footeritem" href="#">About Me</a>
-        <a class="footeritem" href="#">Topics</a>
-      </div>
-      <div class="footercol" id="section5">
-        <h4>Contact Me</h4>
-        <form class="contactform" action="#">
-          <input class="contactbar" type="text" placeholder="Subject">
-          <input class="contactbar" type="text" placeholder="Email Address">
-          <button id="contactsubmit" class="btn" type="submit" formaction="#">Submit</button>
-        </form>
-      </div>
-    </div>
-    <div class="subfooter-bar">
-      <h5>©COMPANY — 2021 | ALL RIGHTS RESERVED</h5>
-    </div>
+    <div id="footer"></div>
   </body>
 </html>
