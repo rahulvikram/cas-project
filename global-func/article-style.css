@@ -1,5 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100%;
+}
+h1::selection {
+  background: #ff4b37;
+  color: white;
+}
+h2::selection {
+  background: #ff4b37;
+  color: white;
+}
+h3::selection {
+  background: #ff4b37;
+  color: white;
+}
+h4::selection {
+  background: #ff4b37;
+  color: white;
+}
+h5::selection {
+  background: #ff4b37;
+  color: white;
+}
+h6::selection {
+  background: #ff4b37;
+  color: white;
+}
+p::selection {
+  background: #ff4b37;
+  color: white;
+}
+li::selection {
+  background: #ff4b37;
+  color: white;
+}
+ul::selection {
+  background: #ff4b37;
+  color: white;
+}
+a::selection {
+  background: #ff4b37;
+  color: white;
+}
+img::selection {
+  background: #ff4b37;
+  color: white;
+}
+input::selection {
+  background: #ff4b37;
+  color: white;
+}
+strong::selection {
+  background: #ff4b37;
+  color: white;
+}
+em::selection {
+  background: #ff4b37;
+  color: white;
+}
 .header-bar {
-  background-color: var(--sub-color);
+  background-color: rgb(3,3,3);
   display: flex;
   position: fixed;
   right: 0px;
@@ -14,6 +78,7 @@
   padding-top:25px !important;
   padding-bottom:25px !important;
   font-family: 'Montserrat', sans-serif;
+  transition: background-color 200ms linear;
 }
 
 #title {
@@ -83,15 +148,15 @@ ul.topnav {
   display: none;
   padding: 13px 15px;
   position: absolute;
-  border-top: 3px solid #092e47;
-  border-bottom: 3px solid #092e47;
+  border-top: 3px solid #1b1b1b;
+  border-bottom: 3px solid #1b1b1b;
   border-radius: 8px;
   font-size: 14px;
   margin-top: 10px;
   animation: fadein 0.2s !important;
   transition: all 0.2s ease;
   width: 200px;
-  background-color: #051f30;
+  background-color: #0a0a0a;
 }
 
 .topnav2 li:hover ul {
@@ -99,7 +164,7 @@ ul.topnav {
 }
 
 .topnav2 li:focus ul {
-  display: block;   
+  display: block;
 }
 
 .topnav2 li ul li {
@@ -147,7 +212,7 @@ input::placeholder {
 }
 
 #searchbar {
-  background-color: rgb(14, 56, 83);
+  background-color: rgb(3,3,3);
   border: none;
   border-radius: 7px;
   color: white;
@@ -156,10 +221,11 @@ input::placeholder {
   font-size: 16px;
   padding-left: 7px;
   padding-right: 7px;
+  transition: 0.05s ease-in;
 }
 
 .subheader-bar {
-  background-color: var(--main-color);
+  background-color: rgb(5,5,5);
   display: flex;
   position: fixed;
   right: 0px;
@@ -186,6 +252,10 @@ input::placeholder {
   color: white;
 }
 
+.subheader-bar h1::selection {
+  background: #ff4b37;  
+}
+
 #title {
   margin: 0;
 }
@@ -195,14 +265,15 @@ input::placeholder {
 }
 
 .footer-bar {
-  background-color: var(--main-color);
+  background-color: rgb(8, 8, 8);
   display: flex;
   right: 0;
   left: 0;
   bottom: 101px;
-  margin-top: 370px;
+  margin-top: 10em;
   gap: 45px;
   align-items: center;
+  overflow: hidden;
   justify-content: space-between;
   padding: 30px 20%;
   height: 12px !important;
@@ -267,7 +338,7 @@ input::placeholder {
 }
 
 .subfooter-bar {
-  background-color: var(--sub-color);
+  background-color: rgb(5, 5, 5);
   padding-top: 40px;
   padding-bottom: 34px;
   right: 0;
@@ -291,7 +362,7 @@ input::placeholder {
 .main-content{
   padding-top: 170px;
   margin: auto;
-  width: 1000px;
+  width: 1250px;
   line-height: 30px;
 }
 
@@ -309,7 +380,11 @@ input::placeholder {
   font-weight: 600;
 }
 
-.main-content h6{
+.main-content img{
+  width: 100%;
+}
+
+#date {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   font-size: 18px;
@@ -328,7 +403,7 @@ input::placeholder {
   color: rgb(78, 78, 78);
 }
 
-.main-content a{
+.link-to {
   color: rgb(0, 147, 233);
   text-decoration: none;
   border-bottom: 1px solid rgb(0, 147, 233);
@@ -356,4 +431,59 @@ input::placeholder {
 .title img{
   height: 52px;
   align-self: center;
+}
+
+.resources {
+  display: flex;
+  gap: 1.2em;
+  align-items: center;
+  align-self: center;
+  margin-bottom: 1em;
+}
+
+.thumbnail {
+  border-radius: 10px;
+}
+
+.video-desc {
+  font-weight: 400 !important;
+  font-size: 1em !important;
+  line-height: 1.2em;
+}
+
+.video-link:hover {
+  background-color: transparent !important;
+}
+
+.video-contents {
+  display: flex;
+  flex-direction: column;
+}
+.video-contents h6, span{
+  padding-bottom: 3px;
+  margin: 0;
+}
+.video-contents h5{
+  padding-bottom: 0px;
+  margin: 0;
+}
+
+.resource-type {
+  padding: 0;
+  margin: 0;
+  margin-left: 0.5em;
+  font-size: 0.65em;
+  font-weight: 400;
+  line-height: 1.7em;
+  padding: 0 5px 0 5px;
+  border-radius: 0.4em;
+}
+#youtube {
+  background-color:rgb(218, 241, 255);
+}
+#online-course {
+  background-color:rgb(255, 218, 255);
+}
+#cert {
+  background-color:rgb(255, 218, 218);
 }

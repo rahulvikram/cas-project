@@ -20,12 +20,11 @@ body {
 }
 
 #img-1 {
-  max-width: 100%;
+  max-width: 1000px;
   border-radius: 16px;
   margin-bottom: 24px;
 }
 
-
 .main-content {
-  max-width: 90%;
+  height: 216px;
 }
